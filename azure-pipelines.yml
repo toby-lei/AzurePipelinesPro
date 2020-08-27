@@ -13,6 +13,9 @@ variables:
 - group: my-variable-group
 
 steps:
+- task: Npm@1
+  inputs:
+    command: 'install'
 - task: Gradle@2
   inputs:
     workingDirectory: ''
